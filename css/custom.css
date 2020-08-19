@@ -1,0 +1,48 @@
+#wrapper #content-wrapper {
+    background-color: #919693;
+    }
+
+    .bg-white {
+        background-color: #e2e2e2!important;
+    }
+.topbar.navbar-light .navbar-nav .nav-item .nav-link {
+    color: #7d7d7d;
+}    
+
+.sidebar-dark .nav-item .nav-link {
+    color: rgb(0, 0, 0);
+}
+
+body{
+    font-family: 'Champagne';
+    letter-spacing: 2px;
+}
+
+.h3, h3 {
+    font-size: 2.75rem;
+}
+
+.text-gray-800 {
+    color: #000000!important;
+}
+
+.sidebar .nav-item .nav-link span {
+    font-size: .99rem;
+    display: inline;
+}
+
+.h6, h6 {
+    font-size: 2rem;
+}
+
+.small, small {
+    font-size: 120%;
+}
+
+.text-xs {
+    font-size: .99rem;
+}
+
+.text-gray-300 {
+    color: #867d7d!important;
+}
