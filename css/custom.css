@@ -54,3 +54,7 @@ body{
 .amarillo{
     color: #f6c23e!important;;
 }
+
+.topbar.navbar-light .navbar-nav .nav-item .nav-link:hover {
+    color: #f6c23e;
+}
