@@ -21,7 +21,7 @@
   --green: #1cc88a;
   --teal: #20c9a6;
   --cyan: #36b9cc;
-  --white: rgb(139, 135, 135);
+  --white: #ffffff;
   --gray: #858796;
   --gray-dark: #5a5c69;
   --primary: #4e73df;
@@ -423,7 +423,7 @@ hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(228, 228, 228, 0.1);
 }
 
 small,
