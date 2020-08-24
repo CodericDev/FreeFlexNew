@@ -24,7 +24,7 @@ subtitle: Subtítulo
               
               <th scope="col">reservaciones<br>32</br></th>
               
-              <th scope="col">reseñas<br>9</br></th>
+              <th scope="col">comentarios<br>9</br></th>
               
             </tr>
           </thead>
@@ -37,7 +37,30 @@ subtitle: Subtítulo
     </div>
 
   </div>
-  <div class="col-15 col-sm-9 col-md-6" >
- XD
+  <div class="col-15 col-sm-9 col-md-9" >
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="perfil-tab" data-toggle="tab" href="#perfil" role="tab" aria-controls="perfil" aria-selected="true">Perfil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="alojamientos-tab" data-toggle="tab" href="#alojamientos" role="tab" aria-controls="alojamientos" aria-selected="false">Alojamientos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="mensajes-tab" data-toggle="tab" href="#mensajes" role="tab" aria-controls="mensajes" aria-selected="false">Mensajes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="reservaciones-tab" data-toggle="tab" href="#reservaciones" role="tab" aria-controls="reservaciones" aria-selected="false">Reservas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="comentarios-tab" data-toggle="tab" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false">Reseñas</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="perfil" role="tabpanel" aria-labelledby="perfil-tab">{%- include index/tab-perfil.html -%}</div>
+      <div class="tab-pane fade" id="alojamientos" role="tabpanel" aria-labelledby="alojamientos-tab">{%- include index/tab-alojamientos.html -%}</div>
+      <div class="tab-pane fade" id="mensajes" role="tabpanel" aria-labelledby="mensajes-tab">{%- include index/tab-mensajes.html -%}</div>
+      <div class="tab-pane fade" id="reservaciones" role="tabpanel" aria-labelledby="reservaciones-tab">{%- include index/tab-reservaciones.html -%}</div>
+      <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">{%- include index/tab-comentarios.html -%}</div>
+    </div> 
   </div>
 </div>

@@ -341,7 +341,7 @@
               
               <th scope="col">reservaciones<br>32</br></th>
               
-              <th scope="col">reseñas<br>9</br></th>
+              <th scope="col">comentarios<br>9</br></th>
               
             </tr>
           </thead>
@@ -354,8 +354,153 @@
     </div>
 
   </div>
-  <div class="col-15 col-sm-9 col-md-6" >
- XD
+  <div class="col-15 col-sm-9 col-md-9" >
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="perfil-tab" data-toggle="tab" href="#perfil" role="tab" aria-controls="perfil" aria-selected="true">Perfil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="alojamientos-tab" data-toggle="tab" href="#alojamientos" role="tab" aria-controls="alojamientos" aria-selected="false">Alojamientos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="mensajes-tab" data-toggle="tab" href="#mensajes" role="tab" aria-controls="mensajes" aria-selected="false">Mensajes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="reservaciones-tab" data-toggle="tab" href="#reservaciones" role="tab" aria-controls="reservaciones" aria-selected="false">Reservas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="comentarios-tab" data-toggle="tab" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false">Reseñas</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="perfil" role="tabpanel" aria-labelledby="perfil-tab">
+
+
+<!-- Area Chart -->
+<!--div class="card shadow mb-4">
+  <div class="card-header py-3">
+    <h6 class="m-0 font-weight-bold text-primary">Ventas</h6>
+  </div>
+  <div class="card-body">
+    <div class="chart-area">
+      <canvas id="myAreaChart"></canvas>
+    </div>
+  </div>
+</div-->
+
+<div class="card mb-4 py-3">
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <label for="formGroupExampleInput"><i class="fas fa-user-edit">Nombre</i></label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1"><i class="fas fa-envelope">Correo</i></label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre@ejemplo.com">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2"><i class="fas fa-phone-square">Telefono</i></label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="+00 000 000 0000">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2"><i class="fas fa-map-marked-alt">Dirección</i></label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Dirección">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2"><i class="fas fa-globe">Pagina web</i></label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="www.ejemplo.com">
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-8">
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1"><i class="fas fa-feather-alt">Sobre mí</i></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="col-4">
+              <img src="img/perfil.jpg"  width="130px" height="120px">
+              <form>
+                <div class="form-group">
+                  <label for="exampleFormControlFile1"><i class="far fa-images">Cambiar imagen</i></label>
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+              </form>
+            </div>
+          </div>
+          </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput"><i class="fab fa-facebook">Facebook</i></label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Facebook">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput"><i class="fab fa-twitter-square">Twitter</i></label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Twitter">
+        </div> 
+        <div class="form-group">
+          <label for="formGroupExampleInput"><i class="fab fa-vk">Vkontakte</i></label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Vkontakte">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput"><i class="fab fa-instagram">Instagram</i></label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Instagram">
+        </div> 
+        <div class="my-2"></div>
+        <a href="#" class="btn btn-success btn-icon-split">
+          <span class="icon text-white-50">
+            <i class="fas fa-check"></i>
+          </span>
+          <span class="text">Guardar Cambios</span>
+        </a>  
+      </form>
+    </div>
+  </div>
+
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo.js"></script>
+  <script src="js/demo/chart-bar-demo.js"></script>
+</div>
+      <div class="tab-pane fade" id="alojamientos" role="tabpanel" aria-labelledby="alojamientos-tab">
+<div class="card mb-4 py-3">
+    <div class="card-body">
+      .border-left-warning 
+    </div>
+  </div></div>
+      <div class="tab-pane fade" id="mensajes" role="tabpanel" aria-labelledby="mensajes-tab">
+<div class="card mb-4 py-3">
+    <div class="card-body">
+      .border-left-warning
+    </div>
+  </div></div>
+      <div class="tab-pane fade" id="reservaciones" role="tabpanel" aria-labelledby="reservaciones-tab">
+<div class="card mb-4 py-3">
+    <div class="card-body">
+      .border-left-warning
+    </div>
+  </div></div>
+      <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+<div class="card mb-4 py-3">
+    <div class="card-body">
+      .border-left-warning
+    </div>
+  </div></div>
+    </div> 
   </div>
 </div>
 
