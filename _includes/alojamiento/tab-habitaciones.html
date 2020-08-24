@@ -1,0 +1,235 @@
+<nav class="navbar navbar-dark bold">
+    <ul class="nav justify-content-center h5">
+      <li class="nav-item">
+        <a class="nav-link" href="alojamiento.html">Alojamiento</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#">***</a>
+      </li>
+    </ul>
+  </nav>
+  
+  
+  <div class="card mb-4 py-3">
+      <div class="card-body">
+  
+          <div class="row">
+              <div class="col-3">
+                <div class="nav flex-column nav-pills negritas h5" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Estándar</a>
+                  <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Premium</a>
+                  <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Nupcial</a>
+                  <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Presidencial</a>
+                 
+                  <hr class="sidebar-divider">
+  
+                  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      Agregar habitación
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Agregar una nueva Habitación</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              
+              <form>
+                  <div class="form-group negritas negro">
+                      <label for="formGroupExampleInput" class="miclase">Nombre de la Habitación</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+                  </div>
+                </form-->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <hr class="sidebar-divider">
+    <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary rojo" data-toggle="modal" data-target="#exampleModal2">
+      Eliminar habitación
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel2">Eliminar Habitación</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              
+              <form>
+                  <div class="form-group negritas negro">
+                      <label for="formGroupExampleInput" class="miclase">Nombre de la Habitación que desea eliminar</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+                  </div>
+                </form-->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary rojo">Eliminar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+                </div>
+              </div>
+              <div class="col-9">
+                <div class="tab-content " id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                      
+                      <ul class="nav nav-tabs" id="myTab" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active miclase" id="home-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="true">General</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link miclase" id="comodidades-tab" data-toggle="tab" href="#comodidades" role="tab" aria-controls="comodidades" aria-selected="false">Comodidades</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link miclase" id="politicas-tab" data-toggle="tab" href="#politicas" role="tab" aria-controls="politicas" aria-selected="false">Políticas</a>
+                            </li>
+                          <li class="nav-item">
+                            <a class="nav-link miclase" id="tarifas-tab" data-toggle="tab" href="#tarifas" role="tab" aria-controls="tarifas" aria-selected="false">Tarifas</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link miclase" id="disponibilidad-tab" data-toggle="tab" href="#disponibilidad" role="tab" aria-controls="disponibilidad" aria-selected="false">Disponibilidad</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link miclase" id="fotos-tab" data-toggle="tab" href="#fotos" role="tab" aria-controls="fotos" aria-selected="false">Fotos</a>
+                          </li>
+                          
+                        </ul>
+                        <div class="tab-content " id="myTabContent">
+                          <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">{%- include habitaciones/tab-general.html -%}</div>
+                          <div class="tab-pane fade" id="comodidades" role="tabpanel" aria-labelledby="comodidades-tab">{%- include habitaciones/tab-comodidades.html -%}</div>
+                          <div class="tab-pane fade" id="politicas" role="tabpanel" aria-labelledby="politicas-tab">{%- include habitaciones/tab-politicas.html -%}</div>
+                          <div class="tab-pane fade" id="tarifas" role="tabpanel" aria-labelledby="tarifas-tab">{%- include habitaciones/tab-tarifas.html -%}</div>
+                          <div class="tab-pane fade" id="disponibilidad" role="tabpanel" aria-labelledby="disponibilidad-tab">{%- include habitaciones/tab-disponibilidad.html -%}</div>
+                          <div class="tab-pane fade" id="fotos" role="tabpanel" aria-labelledby="fotos-tab">{%- include habitaciones/tab-fotos.html -%}</div>
+                        </div>
+  
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-comodidades" role="tabpanel" aria-labelledby="v-pills-comodidades-tab">
+  
+                      <ul class="nav nav-tabs" id="myTab" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active miclase" id="home-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="true">General</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link miclase" id="comodidades-tab" data-toggle="tab" href="#comodidades" role="tab" aria-controls="comodidades" aria-selected="false">Comodidades</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link miclase" id="politicas-tab" data-toggle="tab" href="#politicas" role="tab" aria-controls="politicas" aria-selected="false">Políticas</a>
+                            </li>
+                          <li class="nav-item">
+                            <a class="nav-link miclase" id="tarifas-tab" data-toggle="tab" href="#tarifas" role="tab" aria-controls="tarifas" aria-selected="false">Tarifas</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link miclase" id="disponibilidad-tab" data-toggle="tab" href="#disponibilidad" role="tab" aria-controls="disponibilidad" aria-selected="false">Disponibilidad</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link miclase" id="fotos-tab" data-toggle="tab" href="#fotos" role="tab" aria-controls="fotos" aria-selected="false">Fotos</a>
+                          </li>
+                          
+                        </ul>
+                        <div class="tab-content " id="myTabContent">
+                          <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">{%- include habitaciones/tab-general.html -%}</div>
+                          <div class="tab-pane fade" id="comodidades" role="tabpanel" aria-labelledby="comodidades-tab">{%- include habitaciones/tab-comodidades.html -%}</div>
+                          <div class="tab-pane fade" id="politicas" role="tabpanel" aria-labelledby="politicas-tab">{%- include habitaciones/tab-politicas.html -%}</div>
+                          <div class="tab-pane fade" id="tarifas" role="tabpanel" aria-labelledby="tarifas-tab">{%- include habitaciones/tab-tarifas.html -%}</div>
+                          <div class="tab-pane fade" id="disponibilidad" role="tabpanel" aria-labelledby="disponibilidad-tab">{%- include habitaciones/tab-disponibilidad.html -%}</div>
+                          <div class="tab-pane fade" id="fotos" role="tabpanel" aria-labelledby="fotos-tab">{%- include habitaciones/tab-fotos.html -%}</div>
+                        </div>
+  
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+          
+                      <ul class="nav nav-tabs" id="myTab" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active miclase" id="home-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="true">General</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link miclase" id="comodidades-tab" data-toggle="tab" href="#comodidades" role="tab" aria-controls="comodidades" aria-selected="false">Comodidades</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link miclase" id="politicas-tab" data-toggle="tab" href="#politicas" role="tab" aria-controls="politicas" aria-selected="false">Políticas</a>
+                            </li>
+                          <li class="nav-item">
+                            <a class="nav-link miclase" id="tarifas-tab" data-toggle="tab" href="#tarifas" role="tab" aria-controls="tarifas" aria-selected="false">Tarifas</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link miclase" id="disponibilidad-tab" data-toggle="tab" href="#disponibilidad" role="tab" aria-controls="disponibilidad" aria-selected="false">Disponibilidad</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link miclase" id="fotos-tab" data-toggle="tab" href="#fotos" role="tab" aria-controls="fotos" aria-selected="false">Fotos</a>
+                          </li>
+                          
+                        </ul>
+                        <div class="tab-content " id="myTabContent">
+                          <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">{%- include habitaciones/tab-general.html -%}</div>
+                          <div class="tab-pane fade" id="comodidades" role="tabpanel" aria-labelledby="comodidades-tab">{%- include habitaciones/tab-comodidades.html -%}</div>
+                          <div class="tab-pane fade" id="politicas" role="tabpanel" aria-labelledby="politicas-tab">{%- include habitaciones/tab-politicas.html -%}</div>
+                          <div class="tab-pane fade" id="tarifas" role="tabpanel" aria-labelledby="tarifas-tab">{%- include habitaciones/tab-tarifas.html -%}</div>
+                          <div class="tab-pane fade" id="disponibilidad" role="tabpanel" aria-labelledby="disponibilidad-tab">{%- include habitaciones/tab-disponibilidad.html -%}</div>
+                          <div class="tab-pane fade" id="fotos" role="tabpanel" aria-labelledby="fotos-tab">{%- include habitaciones/tab-fotos.html -%}</div>
+                        </div>
+          
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+  
+                      <ul class="nav nav-tabs" id="myTab" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active miclase" id="home-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="true">General</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link miclase" id="comodidades-tab" data-toggle="tab" href="#comodidades" role="tab" aria-controls="comodidades" aria-selected="false">Comodidades</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link miclase" id="politicas-tab" data-toggle="tab" href="#politicas" role="tab" aria-controls="politicas" aria-selected="false">Políticas</a>
+                            </li>
+                          <li class="nav-item">
+                            <a class="nav-link miclase" id="tarifas-tab" data-toggle="tab" href="#tarifas" role="tab" aria-controls="tarifas" aria-selected="false">Tarifas</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link miclase" id="disponibilidad-tab" data-toggle="tab" href="#disponibilidad" role="tab" aria-controls="disponibilidad" aria-selected="false">Disponibilidad</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link miclase" id="fotos-tab" data-toggle="tab" href="#fotos" role="tab" aria-controls="fotos" aria-selected="false">Fotos</a>
+                          </li>
+                          
+                        </ul>
+                        <div class="tab-content " id="myTabContent">
+                          <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">{%- include habitaciones/tab-general.html -%}</div>
+                          <div class="tab-pane fade" id="comodidades" role="tabpanel" aria-labelledby="comodidades-tab">{%- include habitaciones/tab-comodidades.html -%}</div>
+                          <div class="tab-pane fade" id="politicas" role="tabpanel" aria-labelledby="politicas-tab">{%- include habitaciones/tab-politicas.html -%}</div>
+                          <div class="tab-pane fade" id="tarifas" role="tabpanel" aria-labelledby="tarifas-tab">{%- include habitaciones/tab-tarifas.html -%}</div>
+                          <div class="tab-pane fade" id="disponibilidad" role="tabpanel" aria-labelledby="disponibilidad-tab">{%- include habitaciones/tab-disponibilidad.html -%}</div>
+                          <div class="tab-pane fade" id="fotos" role="tabpanel" aria-labelledby="fotos-tab">{%- include habitaciones/tab-fotos.html -%}</div>
+                        </div>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+  
+    
+   
+  
