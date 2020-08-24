@@ -114,11 +114,21 @@ a {
     color: #ffffff!important;;
 }
 
-.boton-gris {
-    background-color: #8c8b89;
+.boton-verde {
+    background-color: #1cc88a;
     border-color: #ffffff;
 }
 
 .espacio{
     letter-spacing: 0px;
 }
+
+.bold{
+    font-family: 'Champagne Bold';
+}
+
+.verde {
+    color: #fff;
+    background-color: #1cc88a;
+    border-color: #1cc88a;
+}    
