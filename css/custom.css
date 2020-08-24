@@ -132,3 +132,17 @@ a {
     background-color: #1cc88a;
     border-color: #1cc88a;
 }    
+
+.map-container{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container iframe{
+left:0;
+top:0;
+height:500px;
+width:500px;
+position:absolute;
+}
