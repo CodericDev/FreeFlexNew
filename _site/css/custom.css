@@ -89,13 +89,13 @@ a {
 }
 
 .fondo-gris {
-    background-color: #8f8f8f;
+    background-color: #c8c8c8;
     border: 1px solid #8f8f8f;
     
 }
 
 .f-gris {
-    background-color: #cecfcf;
+    background-color: #f1f1f1;
     border: 1px solid #cecfcf;
     
 }
@@ -145,4 +145,24 @@ top:0;
 height:500px;
 width:500px;
 position:absolute;
+}
+
+ .clase1 {
+    flex: 0 0 25%;
+    max-width: 18%;
+}
+
+ .clase2 {
+    flex: 0 0 80%;
+    max-width: 100%;
+
+
+}
+.azul {
+    color: #fff;
+    background-color: #4e73df;
+}    
+
+.text-white-50 {
+    color: rgb(255, 255, 255)!important;
 }

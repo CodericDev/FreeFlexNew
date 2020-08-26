@@ -6,8 +6,37 @@ subtitle: Subtítulo
 
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
   <h5 class="h3 mb-0 text-gray-800 bold">Lista de alojamientos</h5>
-  <a href="habitaciones.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generar informe
-  </a>
+  
+  <button type="button" class="btn btn-primary text-white-50 bold negro" data-toggle="modal" data-target="#exampleModal">
+    Agregar Alojamiento
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Agregar nuevo Alojo</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            
+            <form>
+                <div class="form-group negritas negro">
+                    <label for="formGroupExampleInput" class="miclase">Nombre del Alojamiento</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre del Alojamiento">
+                </div>
+              </form-->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="card mb-4 py-3 border-left-warning h5">
