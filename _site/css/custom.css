@@ -186,5 +186,13 @@ position:absolute;
     border-color: #f58123;
 }
 
+.fd-gris {
+    color: #fff;
+    background-color: #aca9a9;
+    border-color: #aca9a9;
+}
 
-
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #6d6d6d;
+}
