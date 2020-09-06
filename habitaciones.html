@@ -3,6 +3,8 @@ layout: default
 title: Mi Hotel
 subtitle: Subtítulo
 ---
+<a class="float-right h4">ID: habitaciones</a>
+
 <ul class="nav nav-pills h5 bold">
   <li class="nav-item">
    <a class="nav-link" href="alojamiento.html">Alojamiento</a>
@@ -22,11 +24,12 @@ subtitle: Subtítulo
 
 
 <div class="card mb-4 py-3">
-    <div class="card-body">
+  <div class="card-body">
 
-        <div class="row">
+      <div class="row">
             <div class="col-3 clase1">
               <div class="nav flex-column nav-pills negritas h5" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                
                 <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Estándar</a>
                 <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Premium</a>
                 <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Nupcial</a>
@@ -112,9 +115,6 @@ subtitle: Subtítulo
                           <a class="nav-link miclase" id="comodidades-tab" data-toggle="tab" href="#comodidades" role="tab" aria-controls="comodidades" aria-selected="false">Comodidades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link miclase" id="politicas-tab" data-toggle="tab" href="#politicas" role="tab" aria-controls="politicas" aria-selected="false">Políticas</a>
-                          </li>
-                        <li class="nav-item">
                           <a class="nav-link miclase" id="tarifas-tab" data-toggle="tab" href="#tarifas" role="tab" aria-controls="tarifas" aria-selected="false">Tarifas</a>
                         </li>
                         <li class="nav-item">
@@ -123,12 +123,18 @@ subtitle: Subtítulo
                         <li class="nav-item">
                           <a class="nav-link miclase" id="fotos-tab" data-toggle="tab" href="#fotos" role="tab" aria-controls="fotos" aria-selected="false">Fotos</a>
                         </li>
+
+                        <li>
+                          <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                            <label class="custom-control-label bold" for="customSwitch1">Estado de la Habitación</label>
+                          </div>
+                        </li>
                         
                       </ul>
                       <div class="tab-content " id="myTabContent">
                         <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">{%- include habitaciones/tab-general.html -%}</div>
                         <div class="tab-pane fade" id="comodidades" role="tabpanel" aria-labelledby="comodidades-tab">{%- include habitaciones/tab-comodidades.html -%}</div>
-                        <div class="tab-pane fade" id="politicas" role="tabpanel" aria-labelledby="politicas-tab">{%- include habitaciones/tab-politicas.html -%}</div>
                         <div class="tab-pane fade" id="tarifas" role="tabpanel" aria-labelledby="tarifas-tab">{%- include habitaciones/tab-tarifas.html -%}</div>
                         <div class="tab-pane fade" id="disponibilidad" role="tabpanel" aria-labelledby="disponibilidad-tab">{%- include habitaciones/tab-disponibilidad.html -%}</div>
                         <div class="tab-pane fade" id="fotos" role="tabpanel" aria-labelledby="fotos-tab">{%- include habitaciones/tab-fotos.html -%}</div>
@@ -161,7 +167,6 @@ subtitle: Subtítulo
                       <div class="tab-content " id="myTabContent">
                         <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">{%- include habitaciones/tab-general.html -%}</div>
                         <div class="tab-pane fade" id="comodidades" role="tabpanel" aria-labelledby="comodidades-tab">{%- include habitaciones/tab-comodidades.html -%}</div>
-                        <div class="tab-pane fade" id="politicas" role="tabpanel" aria-labelledby="politicas-tab">{%- include habitaciones/tab-politicas.html -%}</div>
                         <div class="tab-pane fade" id="tarifas" role="tabpanel" aria-labelledby="tarifas-tab">{%- include habitaciones/tab-tarifas.html -%}</div>
                         <div class="tab-pane fade" id="disponibilidad" role="tabpanel" aria-labelledby="disponibilidad-tab">{%- include habitaciones/tab-disponibilidad.html -%}</div>
                         <div class="tab-pane fade" id="fotos" role="tabpanel" aria-labelledby="fotos-tab">{%- include habitaciones/tab-fotos.html -%}</div>
@@ -194,7 +199,6 @@ subtitle: Subtítulo
                       <div class="tab-content " id="myTabContent">
                         <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">{%- include habitaciones/tab-general.html -%}</div>
                         <div class="tab-pane fade" id="comodidades" role="tabpanel" aria-labelledby="comodidades-tab">{%- include habitaciones/tab-comodidades.html -%}</div>
-                        <div class="tab-pane fade" id="politicas" role="tabpanel" aria-labelledby="politicas-tab">{%- include habitaciones/tab-politicas.html -%}</div>
                         <div class="tab-pane fade" id="tarifas" role="tabpanel" aria-labelledby="tarifas-tab">{%- include habitaciones/tab-tarifas.html -%}</div>
                         <div class="tab-pane fade" id="disponibilidad" role="tabpanel" aria-labelledby="disponibilidad-tab">{%- include habitaciones/tab-disponibilidad.html -%}</div>
                         <div class="tab-pane fade" id="fotos" role="tabpanel" aria-labelledby="fotos-tab">{%- include habitaciones/tab-fotos.html -%}</div>
@@ -227,11 +231,12 @@ subtitle: Subtítulo
                       <div class="tab-content " id="myTabContent">
                         <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">{%- include habitaciones/tab-general.html -%}</div>
                         <div class="tab-pane fade" id="comodidades" role="tabpanel" aria-labelledby="comodidades-tab">{%- include habitaciones/tab-comodidades.html -%}</div>
-                        <div class="tab-pane fade" id="politicas" role="tabpanel" aria-labelledby="politicas-tab">{%- include habitaciones/tab-politicas.html -%}</div>
                         <div class="tab-pane fade" id="tarifas" role="tabpanel" aria-labelledby="tarifas-tab">{%- include habitaciones/tab-tarifas.html -%}</div>
                         <div class="tab-pane fade" id="disponibilidad" role="tabpanel" aria-labelledby="disponibilidad-tab">{%- include habitaciones/tab-disponibilidad.html -%}</div>
                         <div class="tab-pane fade" id="fotos" role="tabpanel" aria-labelledby="fotos-tab">{%- include habitaciones/tab-fotos.html -%}</div>
                       </div>
+
+                      
 
                 </div>
               </div>
@@ -240,6 +245,8 @@ subtitle: Subtítulo
         </div>
       </div>
     </div>
+    
+    
 
 
   

@@ -166,3 +166,19 @@ position:absolute;
 .text-white-50 {
     color: rgb(255, 255, 255)!important;
 }
+
+.sidebar.toggled {
+    overflow: visible;
+    width: 8rem!important;
+}
+
+.sidebar .sidebar-brand {
+    height: 7.375rem;
+}
+
+.sidebar.toggled .nav-item .nav-link {
+    width: 7.5rem;
+}
+
+
+

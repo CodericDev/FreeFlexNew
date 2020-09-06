@@ -15,7 +15,37 @@ subtitle: Subtítulo
       <div><a class=" d-flex justify-content-center blanco h4">Gabriel Suarez</a></div>
       <div class=" d-flex justify-content-center">
 
-        <a class="btn btn-primary" href="lista-alojamientos" role="button"><i class="far fa-edit">Agregar Alojo +</i></a>
+        <button type="button" class="btn btn-primary text-white-50 bold negro" data-toggle="modal" data-target="#exampleModal">
+          Agregar Alojamiento
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Agregar nuevo Alojamiento</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  
+                  <form>
+                      <div class="form-group negritas negro">
+                          <label for="formGroupExampleInput" class="miclase">Nombre del Alojamiento</label>
+                          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre del Alojamiento">
+                      </div>
+                    </form-->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <a class="btn btn-primary" href="alojamiento.html" role="button">Guardar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
   
       </div>
        <hr class="sidebar-divider">
