@@ -3,7 +3,37 @@ layout: default
 title: Título
 subtitle: Subtítulo
 ---
+<div class="card">
+  <div class="card-header">
+    <h2>Filtros</h2>
+    
+  </div>
+  <div class="card-body">
+    <form action="?">
+      <fieldset>
+        <legend>Filtrar por:</legend>
+        <label >
+          Estado:
+          <select class="select-form"> 
+            <option>Concretadas</option>
+            <option>Pendientes</option>
+            <option>Canceladas</option>
+            <option>No Show</option>
+          </select>
 
+        </label>
+        <label>
+         Desde: 
+         <input type="date">
+        </label>
+        <label>
+         Hasta: 
+          <input type="date">
+        </label>
+      </fieldset>
+    </form>
+  </div>
+</div>
 <div class="card mb-4 py-3">
   <div class="card-body">
     <div class="row">

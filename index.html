@@ -6,7 +6,6 @@ subtitle: Subtítulo
 
 <div class="row no-gutters">
   <div class="col-3 col-md-2,1">
-
     <div style="width: 260px;" class="card mb-4 py-3  fondo">
       <div class="card-body d-flex justify-content-center">
         <img src="img/perfil.jpg"  width="130px" height="120px" class="rounded">
@@ -14,11 +13,9 @@ subtitle: Subtítulo
       <div><a class="miclase d-flex justify-content-center">Bienvenido</a></div>
       <div><a class=" d-flex justify-content-center blanco h4">Gabriel Suarez</a></div>
       <div class=" d-flex justify-content-center">
-
         <button type="button" class="btn btn-primary text-white-50 bold negro" data-toggle="modal" data-target="#exampleModal">
           Agregar Alojamiento
         </button>
-        
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
@@ -30,7 +27,6 @@ subtitle: Subtítulo
                 </button>
               </div>
               <div class="modal-body">
-                  
                   <form>
                       <div class="form-group negritas negro">
                           <label for="formGroupExampleInput" class="miclase">Nombre del Alojamiento</label>
@@ -45,8 +41,6 @@ subtitle: Subtítulo
             </div>
           </div>
         </div>
-      
-  
       </div>
        <hr class="sidebar-divider">
       <a class="dropdown-item d-flex justify-content-center miclase" href="#" data-toggle="modal" data-target="#logoutModal">
@@ -56,21 +50,21 @@ subtitle: Subtítulo
 
   </div>
   <div class="col-15 col-sm-9 col-md-9" >
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <!--ul class="nav nav-tabs" id="myTab" role="tablist">
       <li class="nav-item miclase">
         <a class="nav-link active" id="alojamientos-tab" data-toggle="tab" href="#alojamientos" role="tab" aria-controls="alojamientos" aria-selected="false">Alojamientos</a>
       </li>
       <li class="nav-item miclase">
-        <a class="nav-link" id="mensajes-tab" data-toggle="tab" href="#mensajes" role="tab" aria-controls="mensajes" aria-selected="false">Chat</a>
-      </li>
-      <li class="nav-item miclase">
         <a class="nav-link" id="reservaciones-tab" data-toggle="tab" href="#reservaciones" role="tab" aria-controls="reservaciones" aria-selected="false">Reservas</a>
       </li>
-    </ul>
+      <li class="nav-item miclase">
+        <a class="nav-link" id="mensajes-tab" data-toggle="tab" href="#mensajes" role="tab" aria-controls="mensajes" aria-selected="false">Chat</a>
+      </li>
+    </ul-->
     <div class="tab-content" id="myTabContent">
       <div class="tab-pane fade show active" id="alojamientos" role="tabpanel" aria-labelledby="alojamientos-tab"> <hr class="sidebar-divider">{%- include index/tab-alojamientos.html -%}</div>
-      <div class="tab-pane fade" id="mensajes" role="tabpanel" aria-labelledby="mensajes-tab"> <hr class="sidebar-divider">{%- include index/tab-mensajes.html -%}</div>
       <div class="tab-pane fade" id="reservaciones" role="tabpanel" aria-labelledby="reservaciones-tab"> <hr class="sidebar-divider">{%- include index/tab-reservaciones.html -%}</div>
+      <div class="tab-pane fade" id="mensajes" role="tabpanel" aria-labelledby="mensajes-tab"> <hr class="sidebar-divider">{%- include index/tab-mensajes.html -%}</div>
     </div> 
   </div>
 </div>
