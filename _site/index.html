@@ -51,6 +51,16 @@
       .sidebartape {
         float: left;
       }
+      main {
+        margin-left: 150px;
+      }
+      aside {
+        position: fixed;
+        top: 126px;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+      }
       </style>
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -63,7 +73,8 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   </head>
   <body id="page-top" class="sidebar-toggled">
-    <div id="content-wrapper" class="d-flex flex-column bg-gray">    <div class="container-full">
+    <div id="content-wrapper" class="d-flex flex-column bg-gray">  <header class="fixed-top">
+    <div class="container-full">
       <nav class="navbar navbar-expand navbar-light bg-white topbar static-top shadow">
         <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
           <i class="fa fa-bars"></i>
@@ -260,10 +271,10 @@
         <div class="collapse navbar-collapse" id="navbarColor02">
           <ul class="navbar-nav m-auto">
             <li class="nav-item">
-              <a class="nav-link  text-white" href="/alojamientos">Alojamientos</a>
+              <a class="nav-link  text-white" href="/index.html">Alojamientos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="/reservaciones">Reservas</a>
+              <a class="nav-link text-white" href="/reservas.html">Reservas</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="/mensajes">Chat</a>
@@ -271,8 +282,8 @@
           </ul>
         </div>
       </nav>
-    </div><div class="row">
-        <aside class="col-2"><ul class="navbar-nav bg-gradient-warning sidebar toggled sidebar-dark sidebar_lateral">
+    </div>
+  </header><aside class="sidebar"><ul class="navbar-nav bg-gradient-warning sidebar toggled sidebar-dark sidebar_lateral">
     <li class="nav-item active">
       <a href="index.html" class="nav-link">
         <svg height="30px" viewBox="0 0 16 16" class="bi bi-building" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -315,26 +326,8 @@
         </svg>
         Facturación</a>
     </li>
-
-<hr class="sidebar-divider">
-    <li class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-        <svg height="30px" viewBox="0 0 16 16" class="bi bi-gear-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z"/>
-        </svg>
-        <span><h5>Editar</h5></span>
-    </a>
-    <div id="collapseTwo" class="collapse"  aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-        <h6 class="collapse-header">Opciones</h6>
-        <a class="collapse-item miclase amarillo" href="#">Opcion</a>
-        <a class="collapse-item miclase amarillo" href="#">Opcion</a>
-        <a class="collapse-item miclase amarillo" href="#">Opcion</a>
-        </div>
-    </div>
-    </li>
 </ul></aside>
-        <main class="col-10 my-4">
+      <main class="">
           <div class="row">
   <div class="col-3">
     <div class="card py-3  fondo">
@@ -764,8 +757,7 @@
   </div>
 </div-->
 
-        </main>
-      </div>
+      </main>
     </div><!-- Footer -->
 <footer class="sticky-footer bg-white">
     <div class="container my-auto">

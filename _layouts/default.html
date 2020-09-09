@@ -51,6 +51,16 @@
       .sidebartape {
         float: left;
       }
+      main {
+        margin-left: 150px;
+      }
+      aside {
+        position: fixed;
+        top: 126px;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+      }
       </style>
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -65,14 +75,12 @@
   <body id="page-top" class="sidebar-toggled">
     <div id="content-wrapper" class="d-flex flex-column bg-gray">
       {%- include topbar.html -%}
-      <div class="row">
-        <aside class="col-2">
-          {%- include sidebar.html -%}
-        </aside>
-        <main class="col-10 my-4">
+      <aside class="sidebar">
+        {%- include sidebar.html -%}
+      </aside>
+      <main class="">
           {{ content }}
-        </main>
-      </div>
+      </main>
     </div>
     {%- include footer.html -%}
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

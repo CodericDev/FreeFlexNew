@@ -8,27 +8,26 @@ subtitle: Subtítulo
             <h2>Filtros</h2>
           </div>
           <div class="card-body">
-            <form action="?">
-              <fieldset>
-                <legend>Filtrar por:</legend>
-                <label >
-                  Estado:
-                  <select class="select-form"> 
-                    <option>Concretadas</option>
-                    <option>Pendientes</option>
-                    <option>Canceladas</option>
-                    <option>No Show</option>
-                  </select>
-                </label>
-                <label>
-                Desde: 
-                <input type="date">
-                </label>
-                <label>
-                Hasta: 
-                  <input type="date">
-                </label>
-              </fieldset>
+            <form action="?" class="form-inline">
+                <div class="form-row">
+                  <div class="form-group col">
+                    <label>Estado:</label>
+                    <select class="form-control"> 
+                      <option>Concretadas</option>
+                      <option>Pendientes</option>
+                      <option>Canceladas</option>
+                      <option>No Show</option>
+                    </select>
+                  </div>
+                  <div class="form-group col">
+                  <label>Desde: </label>
+                  <input type="date" class="form-control">
+                  </div>
+                  <div class="form-group col">
+                  <label>Hasta: </label>
+                    <input type="date" class="form-control">
+                  </div>
+                </div>
             </form>
           </div>
         </div>
