@@ -1,5 +1,6 @@
-alojamiento
+alojamiento:
   id
+  user_id
   nombre
   tipo
   telefono
@@ -8,8 +9,9 @@ alojamiento
   descripcion
   map
   impuesto
-habitacion
+habitacion:
   id
+  alojamiento_id
   tipo
   tarifa_costo
   tarifa_precio
@@ -18,34 +20,35 @@ habitacion
   tarifa_adultos
   tarifa_ninios
   tarifa_mascotas
-comodidad
+comodidad:
   id
   descripcion
   orden
   tipo
-comentario
+comentario:
   id
   autor
   email
   contenido
-album
+album:
   id
   nombre
   descripcion
   orden
-pago
+pago:
   id
   user_id
   referencia
   monto
   descripcion
   fecha
-asiento
+asiento:
   id
   user_id
   referencia
   monto
   descripcion
   fecha
-
-
+cotizacion:
+  id
+  user_id
