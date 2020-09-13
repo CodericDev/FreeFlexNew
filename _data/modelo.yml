@@ -1,54 +1,101 @@
+user:
+  id:
+  email:
+  usuario:
+  password:
+  nombres:
+  apellidos:
+  celular:
+  perfil:
+  portada:
+  natalicio:
+  genero:
+  contenido:
+  social_web:
+  social_facebook:
+  social_twitter:
+  social_linkedin:
+  social_instagram:
+  social_pinterest:
+
 alojamiento:
-  id
-  user_id
-  nombre
-  tipo
-  telefono
-  direccion
-  web
-  descripcion
-  map
-  impuesto
+  id:
+  user_id:
+  nombre:
+  tipo:
+  telefono:
+  direccion:
+  web:
+  descripcion:
+  map:
+  impuesto:
+
 habitacion:
-  id
-  alojamiento_id
-  tipo
-  tarifa_costo
-  tarifa_precio
-  tarifa_maximo
-  tarifa_minimo
-  tarifa_adultos
-  tarifa_ninios
-  tarifa_mascotas
-comodidad:
-  id
-  descripcion
-  orden
-  tipo
+  id:
+  alojamiento_id:
+  titulo:
+  slug:
+  tipo:
+  estado:
+  negociable:
+  condicion:
+  contenido:
+  cantidad:
+  tamanio:
+  banios_completos:
+  banios_medios:
+  camas:
+  estancia_minima:
+  huespedes:
+  tarifa_costo:
+  tarifa_precio:
+  tarifa_maximo:
+  tarifa_minimo:
+  tarifa_adultos:
+  tarifa_ninios:
+  tarifa_mascotas:
+  contacto:
+ubicacion:
+  id:
+  latitud:
+  longitud:
+  direccion:
+  zip:
+  ciudad:
+  estado:
+  estado_iso:
+  pais:
+  pais_iso:
+	
+comodidad:  
+  id:
+  descripcion:
+  orden:
+  tipo:
 comentario:
-  id
-  autor
-  email
-  contenido
+  id:
+  autor:
+  email:
+  contenido:
 album:
-  id
-  nombre
-  descripcion
-  orden
+  id:
+  nombre:
+  descripcion:
+  orden:
 pago:
-  id
-  user_id
-  referencia
-  monto
-  descripcion
-  fecha
+  id:
+  user_id:
+  referencia:
+  monto:
+  descripcion:
+  fecha:
 asiento:
-  id
-  user_id
-  referencia
-  monto
-  descripcion
-  fecha
+  id:
+  user_id:
+  referencia:
+  monto:
+  descripcion:
+  fecha:
 cotizacion:
-  id
-  user_id
+  id:
+  user_id:
