@@ -1,0 +1,51 @@
+alojamiento
+  id
+  nombre
+  tipo
+  telefono
+  direccion
+  web
+  descripcion
+  map
+
+habitacion
+  id
+  tipo
+  tarifa_costo
+  tarifa_precio
+  tarifa_maximo
+  tarifa_minimo
+  tarifa_adultos
+  tarifa_ninios
+  tarifa_mascotas
+comodidad
+  id
+  descripcion
+  orden
+  tipo
+comentario
+  id
+  autor
+  email
+  contenido
+album
+  id
+  nombre
+  descripcion
+  orden
+pago
+  id
+  user_id
+  referencia
+  monto
+  descripcion
+  fecha
+asiento
+  id
+  user_id
+  referencia
+  monto
+  descripcion
+  fecha
+
+
