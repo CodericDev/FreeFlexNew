@@ -17,7 +17,6 @@ user:
   social_linkedin:
   social_instagram:
   social_pinterest:
-
 alojamiento:
   id:
   user_id:
@@ -27,9 +26,7 @@ alojamiento:
   direccion:
   web:
   descripcion:
-  map:
   impuesto:
-
 habitacion:
   id:
   alojamiento_id:
@@ -67,7 +64,7 @@ ubicacion:
   pais:
   pais_iso:
 	
-comodidad:  
+comodidad:
   id:
   descripcion:
   orden:
