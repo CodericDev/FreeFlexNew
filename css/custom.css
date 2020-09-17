@@ -200,3 +200,25 @@ position:absolute;
 .espacio {
     margin-top: 0rem;
 }
+
+.amarillo-f {
+    color: #000000;
+    background-color: #eeb72d;
+    border: 1px solid #000000;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -3rem;
+    margin-left: -.75rem;
+}
+
+.bt-largo {
+    line-height: 3.5;
+}    
+
+.btn-outline-info {
+    color: #3554ad;
+    border-color: #3554ad;
+}
