@@ -9,9 +9,43 @@
               <button type="button" class="btn btn-outline-info">+ Periodo</button>
             </div>
           </div>
-          <div class="card-body ">
-            <div class="container">
-              <div class="row">
+          <div class="card-body">
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class=" amarillo-f">Precio costo</th>
+                  <th class=" amarillo-f">precio ideal</th>
+                  <th class=" amarillo-f">precio ideal</th>
+                  <th class=" amarillo-f">Desde</th>
+                  <th class=" amarillo-f">Hasta</th>
+                  <th><button class="btn btn-primary">+</button></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="text" class="form-control"></td>
+                  <td><input type="text" class="form-control"></td>
+                  <td><input type="text" class="form-control"></td>
+                  <td><input type="date" class="form-control"></td>
+                  <td><input type="date" class="form-control"></td>
+                  <td>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">X</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="form-control"></td>
+                  <td><input type="text" class="form-control"></td>
+                  <td><input type="text" class="form-control"></td>
+                  <td><input type="date" class="form-control"></td>
+                  <td><input type="date" class="form-control"></td>
+                  <td>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">X</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+               <div class="row">
                 <div class="col-md-2">
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
@@ -75,7 +109,6 @@
                           <button type="button" class="btn btn-secondary gris" data-dismiss="modal">Cancelar</button>
                           <button type="button" class="btn btn-primary rojo">eliminar</button>
                         </div>
-                      </div>
                     </div>
                   </div>
                 </div>
