@@ -5,9 +5,17 @@
           <i class="fa fa-bars"></i>
         </button>
         <img src="img/logo blanco2.png" width="250px">
+
+        <div class="topbar-divider d-none d-sm-block"></div>
+
+        <button type="button" class="btn btn-primary bold bg-warning negro" data-toggle="modal" data-target="#exampleModal">
+          + Agregar Alojamiento
+        </button>
+  
         <ul class="navbar-nav ml-auto">
-        
+
           <li class="nav-item dropdown no-arrow mx-1">
+     
             <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fas fa-bell fa-fw"></i>
               <span class="badge badge-danger badge-counter amarillo">3+</span>
@@ -161,3 +169,43 @@
       </nav>
     </div>
   </header>
+
+  <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Agregar Nuevo Alojamiento</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <form> 
+        <div class="form-group negritas negro">
+          <label for="formGroupExampleInput" class="miclase">Nombre del Alojamiento</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ejemplo: Oasis">
+        </div>
+
+          <div class="form-row align-items-center">
+            <div class="col-auto my-1 bold">
+              <label class="mr-sm-2 bold" for="inlineFormCustomSelect">Tipo de alojamiento</label>
+              <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                <option selected>Hotel</option>
+                <option value="1">Cabaña</option>
+                <option value="2">Departamentos</option>
+              </select>
+            </div>
+          </div>    
+      </form>  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary bg-success">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>

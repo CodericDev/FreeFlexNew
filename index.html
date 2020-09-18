@@ -13,8 +13,8 @@ subtitle: Subtítulo
       <div><a class="miclase d-flex justify-content-center">Bienvenido</a></div>
       <div><a class=" d-flex justify-content-center blanco h4">Gabriel Suarez</a></div>
       <div class=" d-flex justify-content-center">
-        <button type="button" class="btn btn-primary text-white-50 bold negro" data-toggle="modal" data-target="#exampleModal">
-          Agregar Alojamiento
+        <button type="button" class="btn btn-primary bold bg-success" data-toggle="modal" data-target="#exampleModal">
+          + Agregar Alojamiento
         </button>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
@@ -25,15 +25,26 @@ subtitle: Subtítulo
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body">
-                  <form>
-                      <div class="form-group negritas negro">
-                          <label for="formGroupExampleInput" class="miclase">Nombre del Alojamiento</label>
-                          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre del Alojamiento">
-                      </div>
-                    </form>
+             <div class="modal-body">
+              <form> 
+                <div class="form-group negritas negro">
+                  <label for="formGroupExampleInput" class="miclase">Nombre del Alojamiento</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ejemplo: Oasis">
+                </div>
+        
+                  <div class="form-row align-items-center">
+                    <div class="col-auto my-1 bold">
+                      <label class="mr-sm-2 bold" for="inlineFormCustomSelect">Tipo de alojamiento</label>
+                      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option selected>Hotel</option>
+                        <option value="1">Cabaña</option>
+                        <option value="2">Departamentos</option>
+                      </select>
+                    </div>
+                  </div>    
+              </form>  
               </div>
-              <div class="modal-footer">
+                <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
                 <a class="btn btn-primary" href="alojamiento.html" role="button">Guardar</a>
               </div>
