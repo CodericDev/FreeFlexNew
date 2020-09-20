@@ -222,3 +222,7 @@ position:absolute;
     color: #3554ad;
     border-color: #3554ad;
 }
+
+group>.btn:not(:first-child) {
+    margin-left: 0px;
+}
