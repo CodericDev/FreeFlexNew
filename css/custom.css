@@ -230,3 +230,7 @@ group>.btn:not(:first-child) {
     border-bottom: 1px solid #9e9e9e;
 
 }
+
+.custom-switch {
+    padding-left: 6.25rem;
+}

@@ -14,9 +14,8 @@ subtitle: Subtítulo
               <li><a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Premium</a></li>
               <li><a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Nupcial</a></li>
               <li><a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Presidencial</a></li>
-              <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                Agregar
-                </button>
+              <li>
+                <button type="button" class="btn btn-primary btn-lg btn-block bg-warning">Agregar Nuevo</button>
               </li>
             </ul>
           </div>
@@ -40,7 +39,13 @@ subtitle: Subtítulo
                         <li class="nav-item">
                           <a class="nav-link" id="fotos-tab" data-toggle="tab" href="#fotos" role="tab" aria-controls="fotos" aria-selected="false">Fotos</a>
                         </li> 
-                    </ul>
+                      <li>
+                        <div class="custom-control custom-switch">
+                          <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                          <label class="custom-control-label" for="customSwitch1">Estado</label>
+                        </div>
+                      </li>                      
+                   </ul>
                       <div class="tab-content " id="myTabContent">
                         <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">{%- include habitaciones/tab-general.html -%}</div>
                         <div class="tab-pane fade" id="comodidades" role="tabpanel" aria-labelledby="comodidades-tab">{%- include habitaciones/tab-comodidades.html -%}</div>
@@ -53,8 +58,7 @@ subtitle: Subtítulo
             </div>
           </div> 
                    
-             
-        
+         
       
 
     

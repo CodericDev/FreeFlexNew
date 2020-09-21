@@ -4,64 +4,11 @@ title: Título
 subtitle: Subtítulo
 ---
 
-<div class="row">
-  <div class="col-3">
-    <div class="card py-3  fondo">
-      <div class="card-body d-flex justify-content-center">
-        <img src="img/perfil.jpg"  width="130px" height="120px" class="rounded">
-      </div>
-      <div><a class="miclase d-flex justify-content-center">Bienvenido</a></div>
-      <div><a class=" d-flex justify-content-center blanco h4">Gabriel Suarez</a></div>
-      <div class=" d-flex justify-content-center">
-        <button type="button" class="btn btn-primary bold bg-success" data-toggle="modal" data-target="#exampleModal">
-          + Agregar Alojamiento
-        </button>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Agregar nuevo Alojamiento</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-             <div class="modal-body">
-              <form> 
-                <div class="form-group negritas negro">
-                  <label for="formGroupExampleInput" class="miclase">Nombre del Alojamiento</label>
-                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ejemplo: Oasis">
-                </div>
-        
-                  <div class="form-row align-items-center">
-                    <div class="col-auto my-1 bold">
-                      <label class="mr-sm-2 bold" for="inlineFormCustomSelect">Tipo de alojamiento</label>
-                      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                        <option selected>Hotel</option>
-                        <option value="1">Cabaña</option>
-                        <option value="2">Departamentos</option>
-                      </select>
-                    </div>
-                  </div>    
-              </form>  
-              </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                <a class="btn btn-primary" href="alojamiento.html" role="button">Guardar</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-       <hr class="sidebar-divider">
-      <a class="dropdown-item d-flex justify-content-center miclase" href="#" data-toggle="modal" data-target="#logoutModal">
-        Cerrar Sesión
-      </a>
-    </div>
-  </div>
-  <div class="col-9">
+
+  <div class="col-15">
     {%- include index/tab-alojamientos.html -%}
   </div>
-</div>
+
 <!--div class="row no-gutters">
   <div class="col-15 col-sm-9 col-md-9" >
     <div class="tab-content" id="myTabContent">
